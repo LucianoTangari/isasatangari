@@ -6,7 +6,40 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <style>/* Estilo base para la tarjeta */
+      .card {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+      
+      .card:hover {
+        transform: scale(1.05);
+      }
+      
+      /* Estilos para el botón de "Añadir a carrito" */
+      .card::after {
+        content: "Añadir a carrito";
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+      }
+      
+      /* Mostrar el botón en hover */
+      .card:hover::after {
+        opacity: 1;
+      }
+      </style>
+  </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
         <div class="container-fluid">
@@ -94,56 +127,55 @@
       <hr>
       <div class="row">
         <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#aaa; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 1</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 1" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 1.</p>
+          <div class="card text-center" style="background-color:#aaa;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">Kingston Fury Beast 8gb DDR5 5200Mhz</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2024/02/4361_1_f29dba227b5848f7aa55c29d19c7649b42652_ce2d480d1aca4d0c870164fc82326dbd25924_f3b766a52a224163baedab5c8fd86050.jpg" alt="Producto 1" class="img-fluid mb-2">
+            <p class="card-text">42$</p>
           </div>
         </div>
         
         <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#bbb; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 2</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 2" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 2.</p>
+          <div class="card text-center" style="background-color:#bbb;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">Kingston Fury Beast RGB 8gb DDR5 4800Mhz</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2024/01/5095_1_297b676e48bf4423bed06ca88164ac35252025281252959067_e99da5e474e94eaea484c30cfddb64a3.jpg" alt="Producto 2" class="img-fluid mb-2">
+            <p class="card-text">45$</p>
           </div>
         </div>
         
         <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#ccc; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 3</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 3" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 3.</p>
+          <div class="card text-center" style="background-color:#ccc;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">HikSemi HS-ARMOR 16Gb DDR5 5600mhz Black</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2024/08/6481_1_0555ecef19fa402d98405402ba7ec3b1.jpg" alt="Producto 3" class="img-fluid mb-2">
+            <p class="card-text">56$</p>
           </div>
         </div>
       </div>
       <hr>
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#aaa; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 4</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 4" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 4.</p>
+          <div class="card text-center" style="background-color:#aaa;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">HikSemi HS-ARMOR 16Gb DDR5 5600mhz White</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2024/08/6482_1_28bebbe1f8474a7bae51d4d097773adc.jpg" alt="Producto 4" class="img-fluid mb-2">
+            <p class="card-text">69$</p>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#bbb; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 5</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 5" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 5.</p>
+          <div class="card text-center" style="background-color:#bbb;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">Kingston Fury Beast 16gb DDR5 5200Mhz White Edition</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/05/bd539028_f89bb90e1d464b719e662dfe545804e7-1.jpg" alt="Producto 5" class="img-fluid mb-2">
+            <p class="card-text">74$</p>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#ccc; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 6</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 6" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 6.</p>
+          <div class="card text-center" style="background-color:#ccc;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">Adata XPG Lancer RGB 16Gb DDR5 6000Mhz</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/05/Adata-XPG-Lancer-RGB-16Gb-DDR5-6000Mhz.jpg" alt="Producto 6" class="img-fluid mb-2">
+            <p class="card-text">90$</p>
           </div>
         </div>
       </div>
-    </div>
-    
+    </div>    
 </body>
 </html>

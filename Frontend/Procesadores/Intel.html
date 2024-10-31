@@ -6,6 +6,39 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>/* Estilo base para la tarjeta */
+      .card {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+      
+      .card:hover {
+        transform: scale(1.05);
+      }
+      
+      /* Estilos para el botón de "Añadir a carrito" */
+      .card::after {
+        content: "Añadir a carrito";
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+      }
+      
+      /* Mostrar el botón en hover */
+      .card:hover::after {
+        opacity: 1;
+      }
+      </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
@@ -94,7 +127,7 @@ Procesadores Intel
   <hr>
   <div class="row">
     <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-      <div class="card text-center" style="background-color:#aaa; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="card text-center" style="background-color:#aaa;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h5 class="card-title">Intel Core i7 14700K Raptor Lake 1700</h5>
         <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/10/22620a8e-7cf9-4721-a41d-77a8db3ea5a474112_5d1fe3f9d55a4b4d931d60506b32b733.webp" alt="Producto 1" class="img-fluid mb-2">
         <p class="card-text">590$</p>
@@ -102,7 +135,7 @@ Procesadores Intel
     </div>
     
     <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-      <div class="card text-center" style="background-color:#bbb; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="card text-center" style="background-color:#bbb;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h5 class="card-title">Intel Core i9 13900KF Raptor Lake 1700</h5>
         <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/08/13900ff34381_12c056c3ab684870af2342bf618a52d6.jpg" alt="Producto 2" class="img-fluid mb-2">
         <p class="card-text">770$</p>
@@ -110,7 +143,7 @@ Procesadores Intel
     </div>
     
     <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-      <div class="card text-center" style="background-color:#ccc; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="card text-center" style="background-color:#ccc;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h5 class="card-title"> Intel Core i9 14900f Raptor Lake 1700</h5>
         <img src="https://thotcomputacion.com.uy/wp-content/uploads/2024/01/LD0006096008_000609601455496_31b0c706a03b46809ed5c35e5d15370c.jpg" alt="Producto 3" class="img-fluid mb-2">
         <p class="card-text">785$</p>
@@ -120,7 +153,7 @@ Procesadores Intel
   <hr>
   <div class="row">
     <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card text-center" style="background-color:#aaa; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="card text-center" style="background-color:#aaa; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h5 class="card-title">CPU Intel Core i9 13900K Raptor Lake 1700</h5>
         <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/05/4987_1_44a98544508542ec8a4d324d0090ed74.jpg" alt="Producto 4" class="img-fluid mb-2">
         <p class="card-text">800$</p>
@@ -128,7 +161,7 @@ Procesadores Intel
     </div>
     
     <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card text-center" style="background-color:#bbb; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="card text-center" style="background-color:#bbb;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h5 class="card-title">Intel Core i9 14900KF Raptor Lake 1700</h5>
         <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/10/Intel__Core_i9_14900KF__3_2_GHz__6_0_GHz_Turbo_Boost__socket_1700_processor2540254010000977278644_ed583c7a1ff447499b6229993f7efb0f.jpg" alt="Producto 5" class="img-fluid mb-2">
         <p class="card-text">815$</p>
@@ -136,7 +169,7 @@ Procesadores Intel
     </div>
     
     <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card text-center" style="background-color:#ccc; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="card text-center" style="background-color:#ccc;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h5 class="card-title">Intel Core i9 14900K Raptor Lake 1700</h5>
         <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/10/442353_1920x1920_fdb6f7dc-8d42-41e6-93a2-bc3f1de201df69791_fd3eda9ba64f4f30b6b76c0227ea6a13.webp" alt="Producto 6" class="img-fluid mb-2">
         <p class="card-text">850$</p>

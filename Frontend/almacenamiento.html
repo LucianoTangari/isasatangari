@@ -6,7 +6,40 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <style>/* Estilo base para la tarjeta */
+      .card {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+      
+      .card:hover {
+        transform: scale(1.05);
+      }
+      
+      /* Estilos para el botón de "Añadir a carrito" */
+      .card::after {
+        content: "Añadir a carrito";
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+      }
+      
+      /* Mostrar el botón en hover */
+      .card:hover::after {
+        opacity: 1;
+      }
+      </style>
+  </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
     <div class="container-fluid">
@@ -94,52 +127,52 @@
       <hr>
       <div class="row">
         <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#aaa; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 1</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 1" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 1.</p>
+          <div class="card text-center" style="background-color:#aaa;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">HDD Seagate SkyHawk 1tb 3.5</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2024/09/Disco_Duro_3_5__Seagate_Skyhawk_1TB_Sata_3_5400_RPM_64mb_173518_0d07456d073f4c77bee21b9cc86d7bdf.jpg" alt="Producto 1" class="img-fluid mb-2">
+            <p class="card-text">75$</p>
           </div>
         </div>
         
         <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#bbb; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 2</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 2" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 2.</p>
+          <div class="card text-center" style="background-color:#bbb;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">A400 disco ssd 480Gb</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/05/1848_2_e89cab46c0614ba4b6dcbd0255da2777.png" alt="Producto 2" class="img-fluid mb-2">
+            <p class="card-text">45$</p>
           </div>
         </div>
         
         <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#ccc; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 3</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 3" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 3.</p>
+          <div class="card text-center" style="background-color:#ccc;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">A400 disco ssd 960Gb</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/05/1848_2_e89cab46c0614ba4b6dcbd0255da2777.png" alt="Producto 3" class="img-fluid mb-2">
+            <p class="card-text">85$</p>
           </div>
         </div>
       </div>
       <hr>
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#aaa; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 4</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 4" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 4.</p>
+          <div class="card text-center" style="background-color:#aaa;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">SSD PCIe NVMe KC3000 512Gb GEN 4.0</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/11/4829_3be7bac0c484242039c4575cc59ba6685_25087744ebaa4b4eaec634044a8eb0fa.webp" alt="Producto 4" class="img-fluid mb-2">
+            <p class="card-text">100$</p>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#bbb; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 5</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 5" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 5.</p>
+          <div class="card text-center" style="background-color:#bbb;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">Future Lite SSD PCIe NVMe 1024Gb GEN 4.0</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/12/275_11-09-2023-09-09-12-hs-ssd-future39460_6aff07dc5b614879a287553235d60d15.jpg" alt="Producto 5" class="img-fluid mb-2">
+            <p class="card-text">105$</p>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card text-center" style="background-color:#ccc; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h5 class="card-title">Producto 6</h5>
-            <img src="https://via.placeholder.com/100" alt="Producto 6" class="img-fluid mb-2">
-            <p class="card-text">Descripción breve del producto 6.</p>
+          <div class="card text-center" style="background-color:#ccc;   display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h5 class="card-title">FURY Renegade PCIe 4.0 NVMe M.2 2000Gb</h5>
+            <img src="https://thotcomputacion.com.uy/wp-content/uploads/2023/05/4858_1_03f1ba705116446aab2d1d7b4852b905.jpg" alt="Producto 6" class="img-fluid mb-2">
+            <p class="card-text">275$</p>
           </div>
         </div>
       </div>
